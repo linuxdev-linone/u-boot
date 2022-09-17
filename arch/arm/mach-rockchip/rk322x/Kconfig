@@ -5,6 +5,11 @@ config TARGET_EVB_RK3229
 	bool "EVB_RK3229"
 	select BOARD_LATE_INIT
 
+config TARGET_G1_THINCLIENT_PC_RK3229
+	bool "G1_THINCLIENT_PC_RK3229"
+	select HAS_ROM
+	select BOARD_LATE_INIT
+
 config ROCKCHIP_BOOT_MODE_REG
 	default 0x110005c8
 
@@ -33,5 +38,6 @@ config TPL_TEXT_BASE
         default 0x10081000
 
 source "board/rockchip/evb_rk3229/Kconfig"
+source "board/rockchip/g1_thinclient_pc_rk3229/Kconfig"
 
 endif

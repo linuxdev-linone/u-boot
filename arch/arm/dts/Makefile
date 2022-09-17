@@ -100,7 +100,8 @@ dtb-$(CONFIG_ROCKCHIP_RK3188) += \
 	rk3188-radxarock.dtb
 
 dtb-$(CONFIG_ROCKCHIP_RK322X) += \
-	rk3229-evb.dtb
+	rk3229-evb.dtb \
+	rk3229-g1-thinclient-pc.dtb
 
 dtb-$(CONFIG_ROCKCHIP_RK3288) += \
 	rk3288-evb.dtb \

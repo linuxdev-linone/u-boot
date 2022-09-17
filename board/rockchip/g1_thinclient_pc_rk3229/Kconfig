@@ -1,0 +1,15 @@
+if TARGET_G1_THINCLIENT_PC_RK3229
+
+config SYS_BOARD
+	default "g1_thinclient_pc_rk3229"
+
+config SYS_VENDOR
+	default "rockchip"
+
+config SYS_CONFIG_NAME
+	default "g1_thinclient_pc_rk3229"
+
+config BOARD_SPECIFIC_OPTIONS # dummy
+	def_bool y
+
+endif
