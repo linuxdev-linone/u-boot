@@ -15,6 +15,7 @@
 	compatible = "rockchip,rk3229-evb", "rockchip,rk3229";
 
 	chosen {
+		bootargs = "root=/dev/mmcblk0p4 rootwait rw";
 		u-boot,spl-boot-order = &emmc, &sdmmc;
 	};
 

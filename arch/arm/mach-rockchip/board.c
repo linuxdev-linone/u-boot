@@ -845,6 +845,7 @@ int bootm_board_start(void)
 	if (get_bcb_recovery_msg() == BCB_MSG_RECOVERY_PCBA)
 		env_update("bootargs", "androidboot.selinux=permissive");
 
+	env_update("bootargs", "root=/dev/mmcblk0p4 rootwait rw");
 	/* sysmem */
 	hotkey_run(HK_SYSMEM);
 	sysmem_overflow_check();
